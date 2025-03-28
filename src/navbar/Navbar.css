@@ -1,0 +1,87 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #0c0882;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  /* This will space out the title and icons */
+  align-items: center;
+  padding: 16px 24px;
+  z-index: 50;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b4d1fd;
+  position: inherit;
+  position: absolute;
+  overflow: hidden;
+  left: 45%;
+  transform: translateX(-50%);
+  /* Initially center the title */
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 24px;
+  margin-left: 92%;
+  /* Pushes the icons to the right */
+}
+
+.icon {
+  transition: color 0.2s;
+}
+
+.icon:hover {
+  color: #2563eb;
+  /* Change to blue on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 12px;
+    /* Reduce padding on smaller screens */
+  }
+
+  .navbar-title {
+    font-size: 1.2rem;
+    /* Slightly smaller font size on mobile */
+    left: 45%;
+    transform: translateX(-50%);
+    /* Ensure title stays centered */
+  }
+
+  .navbar-icons {
+    margin-left: 80%;
+    gap: 16px;
+  }
+
+  .navbar-menu {
+    display: block;
+    /* Show hamburger menu on mobile */
+  }
+}
+
+/* Mobile Hamburger Menu */
+.navbar-menu {
+  display: none;
+}
+
+/* Hamburger Icon for small screens */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: block;
+  }
+
+  /* If you want a more customized look for the menu */
+  .navbar-menu svg {
+    width: 24px;
+    height: 24px;
+  }
+}

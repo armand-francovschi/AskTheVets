@@ -1,0 +1,121 @@
+/* Services Section Styling */
+.services-container {
+    margin-top: 2%;
+    background-color: #0c0882;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* #b4d1fd */
+.services-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 6%;
+    color: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 equal columns */
+    gap: 16px;
+    /* Spacing between buttons */
+}
+
+.service-buttonn {
+    background-color: #b4d1fd;
+    /* Tailwind blue-600 */
+    color: black;
+    border: none;
+    width: auto;
+    /* Buttons take full width of the container */
+    font-size: 1.2rem;
+    /* Bigger text */
+    font-weight: bold;
+    border-radius: 12px;
+    /* Slightly rounded corners */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-buttonn:hover {
+    background-color: #ff66ad;
+    /* Darker blue on hover */
+    color: black;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* 3 columns on medium-sized devices */
+
+    }
+
+    .service-button {
+        font-size: 1rem;
+        /* Slightly smaller font size */
+        padding: 12px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .services-container {
+        margin-top: 5%;
+        /* Further reduce top margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablets and smaller devices */
+    }
+
+    .service-button {
+        font-size: 0.9rem;
+        /* Smaller font size */
+        padding: 8px;
+        /* Adjust padding for mobile screens */
+    }
+
+    .services-title {
+        font-size: 1.2rem;
+        /* Adjust title font size */
+    }
+
+    .services-container {
+        margin-top: 8%;
+        /* Adjust the top margin on mobile */
+        padding: 16px;
+        /* Reduce padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 buttons per row on small screens */
+    }
+
+    .service-button {
+        font-size: 0.8rem;
+        /* Even smaller font size for mobile */
+        padding: 8px;
+        /* Adjust padding for mobile screens */
+    }
+
+    .services-title {
+        font-size: 1rem;
+        /* Adjust title font size further */
+    }
+
+    .services-container {
+        margin-top: 5%;
+        /* Further reduce top margin */
+    }
+}
