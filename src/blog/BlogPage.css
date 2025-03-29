@@ -1,0 +1,123 @@
+/* Container for the entire page */
+.blog-page-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0c0882; /* Dark navy background */
+    color: #b4d1fd;            /* Pastel blue text */
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  /* Category Selector (the big Dog/Cat buttons) */
+  .blog-category-selector {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .big-category-button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: 3px solid #b4d1fd;
+    background-color: transparent;
+    color: #b4d1fd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .big-category-button:hover {
+    background-color: #b4d1fd;
+    color: #0c0882;
+  }
+  
+  .big-category-button.active {
+    background-color: #ff66ad; /* Pink accent when active */
+    border-color: #ff66ad;
+    color: #fff;
+  }
+  
+  /* Featured Article */
+  .featured-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .featured-article-image {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  
+  .featured-article-content {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .featured-article-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #b4d1fd;
+  }
+  
+  .featured-article-excerpt {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #b4d1fd;
+  }
+  
+  /* Carousel Section */
+  .carousel-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel-container::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .carousel-container::-webkit-scrollbar-thumb {
+    background: #ff66ad; /* Pink accent for the scrollbar thumb */
+    border-radius: 3px;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    width: 250px;
+    background-color: #b4d1fd; /* Pastel blue background for contrast */
+    color: #0c0882;           /* Dark navy text inside the card */
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .carousel-item-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel-item-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #0c0882;
+  }
+  
+  .carousel-item-excerpt {
+    font-size: 0.95rem;
+    color: #0c0882;
+  }
+  

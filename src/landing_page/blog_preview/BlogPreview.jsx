@@ -1,13 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // For navigation
 import "./BlogPreview.css";
+import { Link } from "react-router-dom";
 
 const BlogPreview = () => {
     const history = useNavigate(); // React Router Hook for navigation
 
     const handleSeeMoreClick = () => {
         // Redirect to the Blog page (can be adjusted if you're using routes)
-        history.push("/blog");
+        navigate("/blogs");
     };
 
     return (
@@ -54,9 +55,9 @@ const BlogPreview = () => {
                     </div>
                 </div>
             </div>
-            <button className="buton-sex" onClick={handleSeeMoreClick}>
+            <Link to="/blogs" className="buton-sex">
                 See more articles
-            </button>
+            </Link>
         </div>
     );
 };
