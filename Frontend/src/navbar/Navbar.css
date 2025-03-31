@@ -1,0 +1,79 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 5;
+  width: 100%;
+  height: 60px;
+  background-color: #0c0882;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 50;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b4d1fd;
+  text-align: center;
+  margin-left: 45%;
+}
+
+.navbar-icons {
+  align-items: center;
+  gap: 12px;
+  margin-right: 15px;
+}
+
+.account-name {
+  color: #ffffff;
+  font-size: 0.95rem;
+  margin-right: 1%;
+}
+
+.logout-btn {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .navbar-title {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .navbar-icons {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .account-name {
+    font-size: 0.85rem;
+    margin-right: 20px;
+  }
+
+  .logout-btn {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+}
